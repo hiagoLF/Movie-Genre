@@ -1,4 +1,4 @@
-# Movie Gente - Desafio 02 - Trilha React
+# Movie Genre - Desafio 02 - Trilha React
 
 - Projeto desenvolvido durante o treinamento Ignite da Rocketseat
 
