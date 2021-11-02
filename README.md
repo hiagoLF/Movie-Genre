@@ -1,4 +1,4 @@
-# Todo App - Desafio 02 - Trilha React
+# Movie Gente - Desafio 02 - Trilha React
 
 - Projeto desenvolvido durante o treinamento Ignite da Rocketseat
 
