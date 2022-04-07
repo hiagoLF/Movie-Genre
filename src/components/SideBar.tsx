@@ -1,6 +1,7 @@
 import { GenreResponseProps } from "../@types/movies";
 import { Button } from "./Button";
 import "../styles/sidebar.scss";
+import { memo } from "react";
 
 interface SideBarProps {
   genres: GenreResponseProps[];
@@ -8,11 +9,11 @@ interface SideBarProps {
   selectedGenreId: number;
 }
 
-export function SideBar({
+export const SideBar = memo<SideBarProps>(({
   genres,
   handleGenreClick,
   selectedGenreId,
-}: SideBarProps) {
+}) => {
   return (
     <nav className="sidebar">
       <span>
@@ -32,4 +33,6 @@ export function SideBar({
       </div>
     </nav>
   );
-}
+}, (prevProps, nextProps) => {
+  return prevProps.selectedGenreId === nextProps.selectedGenreId;
+});
